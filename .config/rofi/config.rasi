@@ -1,3 +1,7 @@
+configuration {
+	show-icons: false;
+	display-drun: "🔍";
+}
 * {
     active-background: #3571db;
     active-foreground: @foreground;
