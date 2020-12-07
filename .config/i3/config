@@ -191,10 +191,14 @@ for_window [instance="origin.exe"] floating enable
 exec_always feh --bg-scale ~/moebius.jpg
 
 # Picom
-exec_always --no-startup-id picom --experimental-backends --backend glx --config ~/.config/picom/picom.conf
+#exec_always --no-startup-id picom --experimental-backends --backend glx --config ~/.config/picom/picom.conf
+exec_always --no-startup-id picom -f
 
 # Multimedia
 
 bindsym $mod+slash exec playerctl play-pause
 bindsym $mod+period exec playerctl next
 bindsym $mod+comma exec playerctl previous
+
+# i3lock
+bindsym $mod+x exec i3lock -c 000000 -e -f
