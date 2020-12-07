@@ -7,3 +7,5 @@
 # invoke global X session script
 . /etc/X11/Xsession
 start i3	
+
+wal -R
