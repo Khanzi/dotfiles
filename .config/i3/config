@@ -175,7 +175,7 @@ gaps outer 10
 
 smart_borders on
 smart_borders no_gaps
-border_radius 10
+border_radius 8
 
 # Remapping caps lock to escape
 exec_always setxkbmap -layout us -option caps:escape
@@ -191,7 +191,7 @@ for_window [instance="origin.exe"] floating enable
 exec_always feh --bg-scale ~/moebius.jpg
 
 # Picom
-exec_always --no-startup-id picom --experimental-backends --backend xrender --config ~/.config/picom/picom.conf
+#exec_always --no-startup-id picom --experimental-backends --backend xrender --config ~/.config/picom/picom.conf
 #exec_always --no-startup-id picom -f
 
 # Multimedia
@@ -205,3 +205,4 @@ bindsym $mod+x exec i3lock -c 000000 -e -f
 
 # Screen clipping
 #bindsym $mod+Shift+s exec_always --no-startup-id import png:- | xclip -selection clipboard -t image/png
+
