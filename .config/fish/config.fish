@@ -1,5 +1,3 @@
-
-
 #  ████ ██         ██                                    ████ ██        
 # ░██░ ░░         ░██                                   ░██░ ░░   █████ 
 #██████ ██  ██████░██         █████   ██████  ███████  ██████ ██ ██░░░██
@@ -24,3 +22,5 @@ alias mon2cam="deno run --unstable -A -r -q https://raw.githubusercontent.com/Sh
 
 export DENO_INSTALL="/home/kahlil/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
+
+alias screen_clip="import png:- | xclip -selection clipboard -t image/png"

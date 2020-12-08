@@ -204,5 +204,4 @@ bindsym $mod+comma exec playerctl previous
 bindsym $mod+x exec i3lock -c 000000 -e -f
 
 # Screen clipping
-#bindsym $mod+Shift+s exec_always --no-startup-id import png:- | xclip -selection clipboard -t image/png
-
+bindsym $mod+Shift+s exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
