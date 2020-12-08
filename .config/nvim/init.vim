@@ -1,3 +1,16 @@
+
+" ████     ██                           ██            
+"░██░██   ░██                          ░░             
+"░██░░██  ░██  █████   ██████  ██    ██ ██ ██████████ 
+"░██ ░░██ ░██ ██░░░██ ██░░░░██░██   ░██░██░░██░░██░░██
+"░██  ░░██░██░███████░██   ░██░░██ ░██ ░██ ░██ ░██ ░██
+"░██   ░░████░██░░░░ ░██   ░██ ░░████  ░██ ░██ ░██ ░██
+"░██    ░░███░░██████░░██████   ░░██   ░██ ███ ░██ ░██
+"░░      ░░░  ░░░░░░  ░░░░░░     ░░    ░░ ░░░  ░░  ░░ 
+
+"Author: Kahlil Wehmeyer
+"github: github.com/khanzi
+
 set nu
 syntax on
 set rnu
@@ -15,6 +28,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'lilydjwg/colorizer'
+Plug 'DougBeney/pickachu'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }

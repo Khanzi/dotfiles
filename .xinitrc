@@ -1,10 +1,19 @@
 #!/bin/sh
 
-# /etc/X11/xinit/xinitrc
-#
-# global xinitrc file, used by all X sessions started by xinit (startx)
 
-# invoke global X session script
+#  ██     ██ ██          ██   ██                 
+# ░░██   ██ ░░          ░░   ░██                 
+#  ░░██ ██   ██ ███████  ██ ██████ ██████  █████ 
+#   ░░███   ░██░░██░░░██░██░░░██░ ░░██░░█ ██░░░██
+#    ██░██  ░██ ░██  ░██░██  ░██   ░██ ░ ░██  ░░ 
+#   ██ ░░██ ░██ ░██  ░██░██  ░██   ░██   ░██   ██
+#  ██   ░░██░██ ███  ░██░██  ░░██ ░███   ░░█████ 
+# ░░     ░░ ░░ ░░░   ░░ ░░    ░░  ░░░     ░░░░░  
+# 
+# Author: Kahlil Wehmeyer
+# github: github.com/khanzi
+
+
 . /etc/X11/Xsession
 start i3	
 
