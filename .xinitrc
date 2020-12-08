@@ -10,4 +10,5 @@ start i3
 
 wal -R
 
-xset -dpms s off
+xset s off 
+xset -dpms
