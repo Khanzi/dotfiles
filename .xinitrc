@@ -7,5 +7,7 @@
 # invoke global X session script
 . /etc/X11/Xsession
 start i3	
-
 wal -R
+xset -dpms
+xset s noblank
+xset s off 
