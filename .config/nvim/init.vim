@@ -23,6 +23,7 @@ set expandtab
 set smartindent
 set hidden
 set noerrorbells
+set nohlsearch
 
 call plug#begin('~/.vim/plugged')
 

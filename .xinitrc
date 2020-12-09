@@ -14,10 +14,14 @@
 # github: github.com/khanzi
 
 
+
+
 . /etc/X11/Xsession
+
+xset s off 
+xset -dpms
+
 start i3	
 
 wal -R
 
-xset s off 
-xset -dpms
