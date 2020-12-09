@@ -30,6 +30,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'lilydjwg/colorizer'
 Plug 'DougBeney/pickachu'
 
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else

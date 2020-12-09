@@ -186,7 +186,6 @@ gaps outer 10
 
 smart_borders on
 smart_borders no_gaps
-border_radius 8
 
 # Remapping caps lock to escape
 exec_always setxkbmap -layout us -option caps:escape
