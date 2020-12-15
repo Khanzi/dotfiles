@@ -228,3 +228,7 @@ bindsym $mod+x exec i3lock -c 000000 -e -f
 
 # Screen clipping
 bindsym $mod+Shift+s exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
+
+# Move workspaces between monitors
+bindsym $mod+Ctrl+h move workspace to output left
+bindsym $mod+Ctrl+l move workspace to output right
