@@ -209,6 +209,10 @@ new_window 1pixel
 
 # Video Games Fixes
 for_window [instance="origin.exe"] floating enable
+for_window [title="Blizzard Battle.net"] floating enable
+for_window [title="^Battle*"] floating enable
+for_window [instance="QuakeChampions*"] floating enable
+
 
 # setting wallpaper
 exec_always feh --bg-scale ~/moebius.jpg
@@ -232,3 +236,7 @@ bindsym $mod+Shift+s exec --no-startup-id maim --select | xclip -selection clipb
 # Move workspaces between monitors
 bindsym $mod+Ctrl+h move workspace to output left
 bindsym $mod+Ctrl+l move workspace to output right
+
+# Misc display settings 
+exec_always xset s off -dpms
+exec_always xrandr --output DP-4 --primary 

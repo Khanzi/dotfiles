@@ -30,6 +30,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'lilydjwg/colorizer'
 Plug 'DougBeney/pickachu'
+Plug 'jiangmiao/auto-pairs'
 
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
