@@ -21,7 +21,7 @@
 xset s off 
 xset -dpms
 
-start i3	
+exec bspwm
 
 wal -R
 
