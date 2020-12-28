@@ -21,7 +21,4 @@
 xset s off 
 xset -dpms
 
-exec bspwm
-
-wal -R
-
+exec i3

@@ -215,7 +215,7 @@ for_window [instance="QuakeChampions*"] floating enable
 
 
 # setting wallpaper
-exec_always feh --bg-scale ~/moebius.jpg
+exec_always feh --bg-scale -z ~/Pictures/wallpapers
 
 # Picom
 #exec_always --no-startup-id picom --experimental-backends --backend xrender --config ~/.config/picom/picom.conf

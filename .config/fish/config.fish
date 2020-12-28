@@ -10,7 +10,6 @@
 # Author: Kahlil Wehmeyer
 # Github: github.com/khanzi
 
-cat ~/.cache/wal/sequences
 
 alias header="~/.config/bash_scripts/header.sh"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
