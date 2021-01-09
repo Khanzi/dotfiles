@@ -194,8 +194,8 @@ bar {
 }
 
 smart_gaps on
-gaps inner 10 
-gaps outer 10 
+gaps inner 5 
+gaps outer 1 
 
 smart_borders on
 smart_borders no_gaps
@@ -208,6 +208,9 @@ for_window [class="^.*"] border pixel 1
 new_window 1pixel
 
 # Video Games Fixes
+for_window [instance="Origin.exe"] floating enable
+for_window [instance="origin.exe"] floating enable
+for_window [instance="steam_app_1182480"] floating enable
 for_window [instance="origin.exe"] floating enable
 for_window [title="Blizzard Battle.net"] floating enable
 for_window [title="^Battle*"] floating enable
@@ -237,6 +240,3 @@ bindsym $mod+Shift+s exec --no-startup-id maim --select | xclip -selection clipb
 bindsym $mod+Ctrl+h move workspace to output left
 bindsym $mod+Ctrl+l move workspace to output right
 
-# Misc display settings 
-exec_always xset s off -dpms
-exec_always xrandr --output DP-4 --primary 
