@@ -193,12 +193,12 @@ bar {
         status_command i3blocks
 }
 
-smart_gaps on
-gaps inner 5 
-gaps outer 1 
+#smart_gaps on
+#gaps inner 5 
+#gaps outer 1 
 
-smart_borders on
-smart_borders no_gaps
+#smart_borders on
+#smart_borders no_gaps
 
 # Remapping caps lock to escape
 exec_always setxkbmap -layout us -option caps:escape
