@@ -240,3 +240,6 @@ bindsym $mod+Shift+s exec --no-startup-id maim --select | xclip -selection clipb
 bindsym $mod+Ctrl+h move workspace to output left
 bindsym $mod+Ctrl+l move workspace to output right
 
+
+# Display config
+exec autorandr -c
