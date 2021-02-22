@@ -23,3 +23,7 @@ export DENO_INSTALL="/home/kahlil/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
 alias screen_clip="import png:- | xclip -selection clipboard -t image/png"
+
+alias vi=nvim
+alias sudo=doas
+alias mine=$HOME/AUR/xmrig-6.9.0/xmrig

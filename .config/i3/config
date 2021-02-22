@@ -41,13 +41,13 @@ font pango:Hack 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec st
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec rofi -show drun
+bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -146,9 +146,11 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 for_window [class="Spotify"] move to workspace $ws10
 for_window [class="discord"] move to workspace $ws10
+for_window [class="youtube-music-desktop-app"] move to workspace $ws10
 
 assign [class="Spotify"] $ws10
 assign [class="discord"] $ws10 
+assign [class="youtube-music-desktop-app"] $ws10 
 
 
 # reload the configuration file
@@ -191,12 +193,12 @@ bar {
         status_command i3blocks
 }
 
-#smart_gaps on
-#gaps inner 5 
-#gaps outer 1 
+smart_gaps on
+gaps inner 5 
+gaps outer 1 
 
-#smart_borders on
-#smart_borders no_gaps
+smart_borders on
+smart_borders no_gaps
 
 # Remapping caps lock to escape
 exec_always setxkbmap -layout us -option caps:escape
@@ -216,7 +218,7 @@ for_window [instance="QuakeChampions*"] floating enable
 
 
 # setting wallpaper
-exec_always feh --bg-scale -z ~/Pictures/wallpapers
+exec_always feh --bg-scale -z ~/Papes/
 
 # Picom
 #exec_always --no-startup-id picom --experimental-backends --backend xrender --config ~/.config/picom/picom.conf
@@ -229,7 +231,7 @@ bindsym $mod+period exec playerctl next
 bindsym $mod+comma exec playerctl previous
 
 # i3lock
-bindsym $mod+x exec i3lock -c 000000 -e -f
+bindsym --release $mod+x exec slock
 
 # Screen clipping
 bindsym $mod+Shift+s exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
