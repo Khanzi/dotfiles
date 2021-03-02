@@ -41,13 +41,13 @@ font pango:Hack 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec st
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym --release $mod+d exec --no-startup-id $HOME/.config/bash_scripts/dmenu_run_i
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -242,4 +242,4 @@ bindsym $mod+Ctrl+l move workspace to output right
 
 
 # Display config
-exec autorandr -c
+exec --no-startup-id sh $HOME/.config/bash_scripts/display_setup
