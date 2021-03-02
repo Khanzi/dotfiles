@@ -50,3 +50,4 @@ fi
 
 
 exec i3
+#damn
