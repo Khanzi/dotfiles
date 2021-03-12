@@ -26,5 +26,6 @@ alias screen_clip="import png:- | xclip -selection clipboard -t image/png"
 alias vi=nvim
 alias sudo=doas
 alias mine=$HOME/AUR/xmrig-6.9.0/xmrig
+alias jul=kitty julia
 
 set PATH $HOME/.config/bash_scripts $PATH
